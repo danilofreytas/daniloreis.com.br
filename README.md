@@ -11,7 +11,7 @@ Web page responsiva desenvolvida como currículo digital para Danilo Freitas, SR
 Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/prissycorrea/daniloreis-cv).
 
 ## 🖥 Resultado
-https://prissycorrea.github.io/daniloreis-cv
+https://danilofreytas.github.io/daniloreis.com.br
 
 ## ✔ Tecnologias utilizadas
 - ``HTML``
