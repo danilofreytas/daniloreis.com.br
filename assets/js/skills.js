@@ -27,9 +27,9 @@ const changeDescription = (nameCard, text) => {
         if(nameCard === '.kubernetes') {
             skillName.innerHTML = ' Kubernetes '
         } 
-        if(nameCard === '.cloudform') {
-            skillName.innerHTML = ' CloudFormation '
-        } 
+        if(nameCard === '.gcp') {
+            skillName.innerHTML = ' GCP '
+        }
     })
 
     document.querySelector(nameCard).addEventListener('mouseout', () => {
@@ -74,12 +74,8 @@ changeDescription(
 )
 
 changeDescription(
-    '.cloudform',
+    '.gcp',
     'Criação de conjuntos de recursos relacionados da AWS para provisioná-los e gerenciá-los de forma organizada e previsível.'   
 )
 
-changeDescription(
-    '.gcp',
-    'Implementação de soluções de infraestrutura, automação e integração de serviços na Google Cloud Platform (GCP), com foco em alta disponibilidade e escalabilidade.'
-)
 }
