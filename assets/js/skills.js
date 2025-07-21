@@ -77,4 +77,9 @@ changeDescription(
     '.cloudform',
     'Criação de conjuntos de recursos relacionados da AWS para provisioná-los e gerenciá-los de forma organizada e previsível.'   
 )
+
+changeDescription(
+    '.gcp',
+    'Implementação de soluções de infraestrutura, automação e integração de serviços na Google Cloud Platform (GCP), com foco em alta disponibilidade e escalabilidade.'
+)
 }
