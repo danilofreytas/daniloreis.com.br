@@ -1,29 +1,35 @@
 .rodape {
     background-color: var(--fundo-secundario);
     color: var(--texto);
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(114, 114, 126, 0.2);
 }
 
 .rodape a {
     text-decoration: none;
     color: var(--hover);
+    transition: color 0.3s ease;
 }
 
 .rodape a:hover {
-    color: var(--texto)
+    color: var(--texto);
+}
+
+.rodape p {
+    margin: 0;
+    line-height: 1.5;
 }
 
 /*----- SMARTPHONE -----*/
 @media only screen and (max-width: 767px) {
-    footer {
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-        width: 100%;
+    .rodape {
+        padding: 15px;
+        margin-top: 40px;
+        font-size: 12px;
     }
 
     .rodape p {
@@ -32,5 +38,23 @@
 
     .rodape a {
         font-size: 12px;
+    }
+}
+
+/*----- TABLET -----*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .rodape {
+        padding: 18px;
+        margin-top: 50px;
+        font-size: 13px;
+    }
+}
+
+/*----- DESKTOP -----*/
+@media only screen and (min-width: 1024px) {
+    .rodape {
+        padding: 20px;
+        margin-top: 60px;
+        font-size: 14px;
     }
 }

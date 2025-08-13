@@ -13,6 +13,7 @@
     border-right: 2.5px solid white;
     overflow: hidden;
     white-space: nowrap;
+    color: var(--texto);
 }
 
 @keyframes escrevendo {
@@ -20,8 +21,47 @@
     to { width: 100% }
 }
 
-  /* The typewriter cursor effect */
+/* The typewriter cursor effect */
 @keyframes cursor {
     0% { border-color: transparent }
     50% { border-color: white}
+}
+
+/*----- SMARTPHONE -----*/
+@media only screen and (max-width: 767px) {
+    .menu__superior--logo {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .menu__superior--texto {
+        font-size: 18px;
+        border-right-width: 2px;
+    }
+}
+
+/*----- TABLET -----*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu__superior--logo {
+        font-size: 22px;
+        margin-bottom: 3px;
+    }
+
+    .menu__superior--texto {
+        font-size: 20px;
+        border-right-width: 2.2px;
+    }
+}
+
+/*----- DESKTOP -----*/
+@media only screen and (min-width: 1024px) {
+    .menu__superior--logo {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .menu__superior--texto {
+        font-size: 24px;
+        border-right-width: 2.5px;
+    }
 }

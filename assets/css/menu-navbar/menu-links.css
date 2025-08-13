@@ -1,6 +1,7 @@
 .menu__superior--links {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .menu__superior--link {
@@ -12,15 +13,17 @@
     position: relative;
     text-decoration: none;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .menu__superior--link:hover {
-    color: #ffffff;
+    color: var(--hover);
     transition: 0.3s;
 }
 
 .active {
     font-weight: 700;
+    color: var(--hover);
 }
 
 /*-----ANIMAÇÃO DOS LINKS DO  MENU----*/
@@ -33,6 +36,7 @@
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
 }
+
 .underline__center--animation:before {
     background: var(--hover);
     bottom: 0;
@@ -53,4 +57,32 @@
 .underline__center--animation:hover:before, .underline__center--animation:focus:before, .underline__center--animation:active:before {
     left: 0;
     right: 0;
+}
+
+/*----- SMARTPHONE -----*/
+@media only screen and (max-width: 767px) {
+    .menu__superior--links {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu__superior--link {
+        font-size: 14px;
+        margin-right: 0;
+        height: auto;
+        padding: 5px 8px;
+    }
+}
+
+/*----- TABLET -----*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu__superior--links {
+        gap: 12px;
+    }
+
+    .menu__superior--link {
+        font-size: 16px;
+        margin-right: 20px;
+    }
 }
